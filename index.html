@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .project-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #1e293b; }
+        .project-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #1e293b; height: 100%; }
         .project-card:hover { transform: translateY(-10px); border-color: #3b82f6; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3); }
         .logo-pixmedia { width: 208px; height: 33px; object-fit: contain; }
     </style>
@@ -22,8 +22,8 @@
             </div>
             <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">William Velázquez Valenzuela</h1>
             <p class="text-xl text-blue-400 font-medium mb-6">Director de Tecnologías | Desarrollo de Sistemas de Seguridad</p>
-            <p class="max-w-2xl mx-auto text-slate-400 leading-relaxed">
-                Especialista en la implementación estratégica de soluciones tecnológicas, infraestructura digital y análisis de datos críticos en Coatzacoalcos, Veracruz.
+            <p class="max-w-2xl mx-auto text-slate-400 leading-relaxed font-light">
+                Soluciones integrales de infraestructura digital, automatización con IA y análisis de datos críticos para el sector de seguridad privada.
             </p>
         </div>
     </header>
@@ -34,17 +34,16 @@
             <div class="h-1 w-24 bg-blue-600 mx-auto mt-4"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
             <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col">
                 <div class="p-8 flex-grow">
                     <div class="text-blue-500 mb-6 text-3xl"><i class="fas fa-robot"></i></div>
                     <h3 class="text-xl font-bold text-white mb-3">Reporteador C4 AI</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Sistema avanzado con Inteligencia Artificial para la corrección de novedades y generación automatizada de reportes PDF para Braskem Idesa.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] bg-blue-900/30 text-blue-400 px-2 py-1 rounded border border-blue-800">PHP</span>
-                        <span class="text-[10px] bg-blue-900/30 text-blue-400 px-2 py-1 rounded border border-blue-800">AI GEMINI</span>
-                        <span class="text-[10px] bg-blue-900/30 text-blue-400 px-2 py-1 rounded border border-blue-800">FPDF</span>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Optimización de novedades mediante IA y generación automatizada de reportes PDF para Braskem Idesa.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] bg-blue-900/30 text-blue-400 px-2 py-1 rounded border border-blue-800 uppercase font-bold tracking-wider">AI Integration</span>
+                        <span class="text-[10px] bg-blue-900/30 text-blue-400 px-2 py-1 rounded border border-blue-800 uppercase font-bold tracking-wider">PHP Backend</span>
                     </div>
                 </div>
                 <a href="https://willy100fuegos.github.io/Reporteador-Braskem/" class="bg-blue-600 hover:bg-blue-500 text-white text-center py-4 font-bold transition">Explorar Proyecto</a>
@@ -54,11 +53,10 @@
                 <div class="p-8 flex-grow">
                     <div class="text-emerald-500 mb-6 text-3xl"><i class="fas fa-chart-line"></i></div>
                     <h3 class="text-xl font-bold text-white mb-3">Braskem Intelligence</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Dashboards de Business Intelligence enfocados en logística de rutas críticas, incidencia delictiva regional y análisis FODA operativo.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] bg-emerald-900/30 text-emerald-400 px-2 py-1 rounded border border-emerald-800">HTML5</span>
-                        <span class="text-[10px] bg-emerald-900/30 text-emerald-400 px-2 py-1 rounded border border-emerald-800">BI ANALYTICS</span>
-                        <span class="text-[10px] bg-emerald-900/30 text-emerald-400 px-2 py-1 rounded border border-emerald-800">LEAFLET JS</span>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Dashboards de Business Intelligence para logística de rutas críticas y análisis de incidencia delictiva.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] bg-emerald-900/30 text-emerald-400 px-2 py-1 rounded border border-emerald-800 uppercase font-bold tracking-wider">Data Analytics</span>
+                        <span class="text-[10px] bg-emerald-900/30 text-emerald-400 px-2 py-1 rounded border border-emerald-800 uppercase font-bold tracking-wider">Leaflet JS</span>
                     </div>
                 </div>
                 <a href="https://willy100fuegos.github.io/Braskem/" class="bg-emerald-600 hover:bg-emerald-500 text-white text-center py-4 font-bold transition">Ver Dashboards</a>
@@ -68,13 +66,26 @@
                 <div class="p-8 flex-grow">
                     <div class="text-orange-500 mb-6 text-3xl"><i class="fas fa-satellite-dish"></i></div>
                     <h3 class="text-xl font-bold text-white mb-3">TQPM Monitoring</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Portal de seguimiento operativo para la Terminal Química Puerto México, especializado en telemetría GPS y reportes de seguridad global.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] bg-orange-900/30 text-orange-400 px-2 py-1 rounded border border-orange-800">GPS TRACKING</span>
-                        <span class="text-[10px] bg-orange-900/30 text-orange-400 px-2 py-1 rounded border border-orange-800">CCTV TECH</span>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Portal de seguimiento operativo especializado en telemetría GPS y reportes de seguridad para terminales químicas.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] bg-orange-900/30 text-orange-400 px-2 py-1 rounded border border-orange-800 uppercase font-bold tracking-wider">GPS Telemetry</span>
+                        <span class="text-[10px] bg-orange-900/30 text-orange-400 px-2 py-1 rounded border border-orange-800 uppercase font-bold tracking-wider">CCTV</span>
                     </div>
                 </div>
                 <a href="https://willy100fuegos.github.io/TQPM/" class="bg-orange-600 hover:bg-orange-500 text-white text-center py-4 font-bold transition">Acceder al Portal</a>
+            </div>
+
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col">
+                <div class="p-8 flex-grow">
+                    <div class="text-purple-500 mb-6 text-3xl"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Los Conejos - Web Dev</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Proyecto de diseño web y estructuración de interfaces estáticas para portafolio de clientes externos.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] bg-purple-900/30 text-purple-400 px-2 py-1 rounded border border-purple-800 uppercase font-bold tracking-wider">HTML/CSS</span>
+                        <span class="text-[10px] bg-purple-900/30 text-purple-400 px-2 py-1 rounded border border-purple-800 uppercase font-bold tracking-wider">UI Design</span>
+                    </div>
+                </div>
+                <a href="https://willy100fuegos.github.io/los-conejos/" class="bg-purple-600 hover:bg-purple-500 text-white text-center py-4 font-bold transition">Ver Proyecto</a>
             </div>
 
         </div>
@@ -82,8 +93,7 @@
 
     <footer class="py-12 border-t border-slate-800 bg-[#080c14] text-center">
         <img src="https://pixmedia.b-cdn.net/pixmedialogoblanco.png" alt="Pixmedia" class="logo-pixmedia mx-auto mb-6 opacity-60">
-        <p class="text-slate-500 text-xs uppercase tracking-widest font-bold mb-2">Pixmedia Agency | Dirección de Tecnologías</p>
-        <p class="text-[10px] text-slate-600 tracking-tighter">Coatzacoalcos, Veracruz, México - 2026</p>
+        <p class="text-slate-500 text-[10px] uppercase tracking-[0.3em] font-bold">Pixmedia Agency | Dirección de Tecnologías</p>
     </footer>
 
 </body>
