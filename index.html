@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Velázquez | Portal de Soluciones Tecnológicas</title>
+    <title>William Velázquez | Director de Tecnologías</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
         .project-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #1e293b; height: 100%; }
-        .project-card:hover { transform: translateY(-10px); border-color: #3b82f6; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3); }
+        .project-card:hover { transform: translateY(-5px); border-color: #3b82f6; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3); }
         .logo-pixmedia { width: 208px; height: 33px; object-fit: contain; }
+        
+        /* Etiquetas de Categoría */
+        .badge { font-size: 0.65rem; text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em; padding: 0.2rem 0.5rem; border-radius: 0.25rem; border: 1px solid; }
+        .badge-ai { background: rgba(59, 130, 246, 0.1); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3); }
+        .badge-ops { background: rgba(16, 185, 129, 0.1); color: #34d399; border-color: rgba(16, 185, 129, 0.3); }
+        .badge-bi { background: rgba(245, 158, 11, 0.1); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3); }
+        .badge-civic { background: rgba(239, 68, 68, 0.1); color: #f87171; border-color: rgba(239, 68, 68, 0.3); }
     </style>
 </head>
 <body class="bg-[#0b0f1a] text-slate-300 font-sans">
@@ -23,7 +30,7 @@
             <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">William Velázquez Valenzuela</h1>
             <p class="text-xl text-blue-400 font-medium mb-6">Director de Tecnologías | Desarrollo de Sistemas de Seguridad</p>
             <p class="max-w-2xl mx-auto text-slate-400 leading-relaxed font-light">
-                Soluciones integrales de infraestructura digital, automatización con IA y análisis de datos críticos para el sector de seguridad privada.
+                Arquitectura de soluciones integrales: Desde la infraestructura crítica y telemetría GPS, hasta plataformas de vinculación ciudadana e inteligencia de negocios (BI).
             </p>
         </div>
     </header>
@@ -34,61 +41,114 @@
             <div class="h-1 w-24 bg-blue-600 mx-auto mt-4"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             
-            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col">
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
                 <div class="p-8 flex-grow">
-                    <div class="text-blue-500 mb-6 text-3xl"><i class="fas fa-robot"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-3">Reporteador C4 AI</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Optimización de novedades mediante IA y generación automatizada de reportes PDF para Braskem Idesa.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] bg-blue-900/30 text-blue-400 px-2 py-1 rounded border border-blue-800 uppercase font-bold tracking-wider">AI Integration</span>
-                        <span class="text-[10px] bg-blue-900/30 text-blue-400 px-2 py-1 rounded border border-blue-800 uppercase font-bold tracking-wider">PHP Backend</span>
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-red-500 text-3xl"><i class="fas fa-user-shield"></i></div>
+                        <span class="badge badge-civic">Civic Tech</span>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-red-400 transition">CoatzaSeguro C5</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Plataforma de vinculación ciudadana para el reporte anónimo de incidentes. Incluye dashboard táctico para C5, chat bidireccional y seguimiento por folio.</p>
                 </div>
-                <a href="https://willy100fuegos.github.io/Reporteador-Braskem/" class="bg-blue-600 hover:bg-blue-500 text-white text-center py-4 font-bold transition">Explorar Proyecto</a>
+                <a href="https://willy100fuegos.github.io/Coatza-Seguro/" class="bg-slate-800 hover:bg-red-900/40 text-white text-center py-4 font-bold transition border-t border-slate-700 hover:text-red-400">Ver Plataforma <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
 
-            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col">
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
                 <div class="p-8 flex-grow">
-                    <div class="text-emerald-500 mb-6 text-3xl"><i class="fas fa-chart-line"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-3">Braskem Intelligence</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Dashboards de Business Intelligence para logística de rutas críticas y análisis de incidencia delictiva.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] bg-emerald-900/30 text-emerald-400 px-2 py-1 rounded border border-emerald-800 uppercase font-bold tracking-wider">Data Analytics</span>
-                        <span class="text-[10px] bg-emerald-900/30 text-emerald-400 px-2 py-1 rounded border border-emerald-800 uppercase font-bold tracking-wider">Leaflet JS</span>
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-emerald-500 text-3xl"><i class="fas fa-mobile-screen-button"></i></div>
+                        <span class="badge badge-ops">Operations</span>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition">Suite Operativa PWA</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Ecosistema de Web Apps Progresivas para la digitalización de reportes en campo. Generación automática de tarjetas tácticas y logs históricos.</p>
                 </div>
-                <a href="https://willy100fuegos.github.io/Braskem/" class="bg-emerald-600 hover:bg-emerald-500 text-white text-center py-4 font-bold transition">Ver Dashboards</a>
+                <a href="https://willy100fuegos.github.io/reportes-estado-de-fuerza/" class="bg-slate-800 hover:bg-emerald-900/40 text-white text-center py-4 font-bold transition border-t border-slate-700 hover:text-emerald-400">Acceder a Suite <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
 
-            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col">
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
                 <div class="p-8 flex-grow">
-                    <div class="text-orange-500 mb-6 text-3xl"><i class="fas fa-satellite-dish"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-3">TQPM Monitoring</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Portal de seguimiento operativo especializado en telemetría GPS y reportes de seguridad para terminales químicas.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] bg-orange-900/30 text-orange-400 px-2 py-1 rounded border border-orange-800 uppercase font-bold tracking-wider">GPS Telemetry</span>
-                        <span class="text-[10px] bg-orange-900/30 text-orange-400 px-2 py-1 rounded border border-orange-800 uppercase font-bold tracking-wider">CCTV</span>
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-orange-500 text-3xl"><i class="fas fa-truck-fast"></i></div>
+                        <span class="badge badge-bi">Telemetry BI</span>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition">GPC Intelligence</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Dashboard avanzado de telemetría para análisis de flotas pesadas. Monitoreo de rendimiento, combustible, ralentí y seguridad en ruta.</p>
                 </div>
-                <a href="https://willy100fuegos.github.io/TQPM/" class="bg-orange-600 hover:bg-orange-500 text-white text-center py-4 font-bold transition">Acceder al Portal</a>
+                <a href="https://willy100fuegos.github.io/GPC-reportes/" class="bg-slate-800 hover:bg-orange-900/40 text-white text-center py-4 font-bold transition border-t border-slate-700 hover:text-orange-400">Ver Dashboard <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
 
-            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col">
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
                 <div class="p-8 flex-grow">
-                    <div class="text-purple-500 mb-6 text-3xl"><i class="fas fa-chart-pie"></i></div>
-                    
-                    <h3 class="text-xl font-bold text-white mb-3">Los Conejos - Mystery Shopper</h3>
-                    
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Dashboard estratégico para la auditoría de calidad de servicio. Visualización de KPIs, análisis de cumplimiento y métricas de evaluación mediante gráficos dinámicos.</p>
-                    
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] bg-purple-900/30 text-purple-400 px-2 py-1 rounded border border-purple-800 uppercase font-bold tracking-wider">Chart.js</span>
-                        <span class="text-[10px] bg-purple-900/30 text-purple-400 px-2 py-1 rounded border border-purple-800 uppercase font-bold tracking-wider">Service Analytics</span>
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-blue-500 text-3xl"><i class="fas fa-robot"></i></div>
+                        <span class="badge badge-ai">AI Core</span>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition">Reporteador ECC</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Sistema de gestión de evidencia digital potenciado por IA (Gemini). Redacción automática de informes ejecutivos y generación de PDFs legales.</p>
                 </div>
-                <a href="https://willy100fuegos.github.io/los-conejos/" class="bg-purple-600 hover:bg-purple-500 text-white text-center py-4 font-bold transition">Ver Dashboard</a>
+                <a href="https://willy100fuegos.github.io/Reportes-ECC/" class="bg-slate-800 hover:bg-blue-900/40 text-white text-center py-4 font-bold transition border-t border-slate-700 hover:text-blue-400">Ver Demo Técnica <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-purple-500 text-3xl"><i class="fas fa-industry"></i></div>
+                        <span class="badge badge-bi">Analytics</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition">TQPM Intelligence</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Hub de reportes para Terminal Química Puerto México. Incluye Dashboards anuales interactivos y bitácoras de operación portuaria.</p>
+                </div>
+                <a href="https://willy100fuegos.github.io/TQPM/" class="bg-slate-800 hover:bg-purple-900/40 text-white text-center py-4 font-bold transition border-t border-slate-700 hover:text-purple-400">Ver Reportes <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-cyan-500 text-3xl"><i class="fas fa-newspaper"></i></div>
+                        <span class="badge badge-civic">Comms</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition">Hub de Comunicaciones</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Central de distribución de comunicados oficiales, alertas de inteligencia vial y newsletters corporativos HTML.</p>
+                </div>
+                <a href="https://willy100fuegos.github.io/boletines/" class="bg-slate-800 hover:bg-cyan-900/40 text-white text-center py-4 font-bold transition border-t border-slate-700 hover:text-cyan-400">Ver Boletines <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-emerald-500 text-3xl"><i class="fas fa-map-location-dot"></i></div>
+                        <span class="badge badge-ops">Logistics</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition">Braskem Logistics</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Visualización geoespacial de rutas críticas y análisis de riesgo en cadena de suministro petroquímica.</p>
+                </div>
+                <a href="https://willy100fuegos.github.io/Braskem/" class="bg-slate-800 hover:bg-emerald-900/40 text-white text-center py-4 font-bold transition border-t border-slate-700 hover:text-emerald-400">Ver Mapa <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-slate-500 text-3xl"><i class="fas fa-file-code"></i></div>
+                        <span class="badge badge-ai">Backend</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition">Reporteador C4 (V1)</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Primera versión del sistema de automatización de reportes para seguridad patrimonial Braskem Idesa.</p>
+                </div>
+                <a href="https://willy100fuegos.github.io/Reporteador-Braskem/" class="bg-slate-800 hover:bg-slate-700 text-white text-center py-4 font-bold transition border-t border-slate-700">Explorar <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+
+            <div class="project-card bg-[#161b2a] rounded-2xl overflow-hidden flex flex-col group">
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-pink-500 text-3xl"><i class="fas fa-chart-pie"></i></div>
+                        <span class="badge badge-bi">Quality</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition">Mystery Shopper</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Dashboard para auditoría de calidad de servicio. Visualización de KPIs y cumplimiento mediante gráficos dinámicos.</p>
+                </div>
+                <a href="https://willy100fuegos.github.io/los-conejos/" class="bg-slate-800 hover:bg-pink-900/40 text-white text-center py-4 font-bold transition border-t border-slate-700 hover:text-pink-400">Ver Métricas <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
 
         </div>
@@ -96,7 +156,7 @@
 
     <footer class="py-12 border-t border-slate-800 bg-[#080c14] text-center">
         <img src="https://pixmedia.b-cdn.net/pixmedialogoblanco.png" alt="Pixmedia" class="logo-pixmedia mx-auto mb-6 opacity-60">
-        <p class="text-slate-500 text-[10px] uppercase tracking-[0.3em] font-bold">Pixmedia Agency | Dirección de Tecnologías</p>
+        <p class="text-slate-500 text-[10px] uppercase tracking-[0.3em] font-bold">Pixmedia Agency | Dirección de Tecnologías 2026</p>
     </footer>
 
 </body>
